@@ -19,6 +19,7 @@ Thumbs.db
 
 # Ignore generated files and plugins
 # ----------------------------------------------------------------------
-public/css/dest
+public/assets/css/dest
 public/node_modules
-public/js/dest
+public/assets/js/dest
+
