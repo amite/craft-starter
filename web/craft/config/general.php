@@ -25,6 +25,7 @@ return array(
       'assetsBasePath' => './assets/uploads',
     ),
     'backupDbOnUpdate' => false,
+    'testToEmailAddress' => 'amit.erandole@gmail.com',
   ),
 
   'cacheBustValue' => '20121017',
