@@ -17,3 +17,8 @@ Thumbs.db
 *.sublime-workspace
 *.sublime-project
 
+# Ignore generated files and plugins
+# ----------------------------------------------------------------------
+public/css/dest
+public/node_modules
+public/js/dest
