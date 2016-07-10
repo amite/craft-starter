@@ -16,9 +16,6 @@ return array(
   '*' => array(
     'omitScriptNameInUrls' => true,
     'siteUrlAbs'  => SITE_URL_ABS,
-    'siteUrl'  => array(
-      'en' => SITE_URL,
-    ),
     'environmentVariables' => array(
       'basePath' => BASEPATH,
       'assetsBaseUrl' => '/assets/uploads',
