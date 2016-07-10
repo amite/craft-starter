@@ -46,7 +46,7 @@ return array(
     'assetsImagesUrl' => '/assets/images',
   ),
   'live' => array(
-    'devMode' => false,
+    'devMode' => true,
     'cache' => false,
     'assetsCssUrl' => '/assets/css',
     'assetsJsUrl' => '/assets/js',
