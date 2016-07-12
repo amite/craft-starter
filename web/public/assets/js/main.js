@@ -21,7 +21,7 @@
 			this.menuHover();
 			this.mobileMenuToggle();
 			this.mobileMenu();
-			this.stickyHeader();
+			// this.stickyHeader();
 			this.productHoverFix();
 			this.productCountdown();
 			this.searchDropdownFix();
@@ -29,7 +29,7 @@
 			this.scrollTo();
 			this.fitVids();
 			this.flickerFeed();
-			this.progressBars();
+			// this.progressBars();
 			this.toggleSideMenu();
 			this.sideMenuCollapse();
 			this.sideMenuScrollbar();
@@ -122,16 +122,16 @@
 				e.stopPropagation();
 			})
 		},
-		stickyHeader: function () {
-			// Stickymenu with waypoint and waypoint sticky plugins - call if sticky-menu class is added
-			if ( $('.sticky-header').length && $(window).width() >= 992 ) {
-				var sticky = new Waypoint.Sticky({
-					element: $('.sticky-header')[0],
-					stuckClass: 'fixed',
-					offset: -200
-				});
-			}
-		},
+		// stickyHeader: function () {
+		// 	// Stickymenu with waypoint and waypoint sticky plugins - call if sticky-menu class is added
+		// 	if ( $('.sticky-header').length && $(window).width() >= 992 ) {
+		// 		var sticky = new Waypoint.Sticky({
+		// 			element: $('.sticky-header')[0],
+		// 			stuckClass: 'fixed',
+		// 			offset: -200
+		// 		});
+		// 	}
+		// },
 		productHoverFix: function() {
 			// Product Buttons Fix related to the product
 			if ($.fn.hoverIntent) {
@@ -889,24 +889,24 @@
 				selector: '.video-btn'
 			});	
 		},
-		progressBars: function () {
-			var self = this;
-			// Calculate and Animate Progress 
-			$('.progress-animate').waypoint( function (direction) {
-				var $this =  $(this.element),
-					progressVal = $this.data('width');
+		// progressBars: function () {
+		// 	var self = this;
+		// 	// Calculate and Animate Progress 
+		// 	$('.progress-animate').waypoint( function (direction) {
+		// 		var $this =  $(this.element),
+		// 			progressVal = $this.data('width');
 
-				$this.css({ 'width' : progressVal + '%'}, 400);
+		// 		$this.css({ 'width' : progressVal + '%'}, 400);
 
-				setTimeout(function() {
-					$this.removeClass('progress-animate');
-					$this.find('.progress-text').fadeIn(400);
-				}, 400);
-			}, {
-				offset: '80%',
-				triggerOnce: true 
-			});
-		},
+		// 		setTimeout(function() {
+		// 			$this.removeClass('progress-animate');
+		// 			$this.find('.progress-text').fadeIn(400);
+		// 		}, 400);
+		// 	}, {
+		// 		offset: '80%',
+		// 		triggerOnce: true 
+		// 	});
+		// },
 		scrollAnimations: function () {
 			/* Wowy Plugin */
 			if ( typeof WOW === 'function' ) {
